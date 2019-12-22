@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercise-2</title>
+    <link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css">
+    <link rel="stylesheet" href="https://overpass-30e2.kxcdn.com/overpass.css">
+    <style>
+        body {
+            background-color: #f1f0f0;
+            color: #444;
+            font-family: overpass;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #004080;
+        }
+        .container-main {
+            background-color: #FFF;
+            padding: 24px;
+            width: 360px;
+        }
+        h1, h2 {
+            margin: 0;
+            font-weight: 600;
+        }
+        h1 {
+            font-size: 20px;           
+        }
+        h2 {
+            font-size: 18px;
+        }
+        p {
+            margin: 6px 0;
+        }
+        dl {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+        }
+        dd {
+            padding: 12px 0;
+            flex-basis: 110px; 
+            margin: 0;
+        }
+        dd i {
+            font-size: 16px;
+            margin: 0 6px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        header a {
+            margin: 12px 0 12px 12px;
+        }
+        main header {
+            display: block;
+            margin: 0;
+        }
+        .status-success {
+            color: #3f8743;
+        }
+        .status-warning {
+            color: #eeac34;
+        }
+        .status-error {
+            color: #c7232d;
+        }
+        @media screen and (max-width: 640px) {
+            .container-main {
+                width: 230px;
+                padding: 12px;
+            }
+            header {
+                margin-bottom: 6px;
+            }
+            h1 {
+                font-size: 18px;           
+            }
+            h2 {
+                font-size: 16px;
+                margin-bottom: 6px;
+            }
+            dl {
+                display: block;
+            }
+            dt {
+                margin: 12px 0;
+            }
+            dd {
+                margin: 12px 0;
+                padding: 0;
+            }
+            dd i {
+                margin-left: 0;
+            }
+            p {
+                margin: 0;
+            }
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/d6c2d10884.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-main">
+        <header>
+            <h1>Inventory</h1>
+            <a href="#">See details</a>
+        </header>
+        <main>
+            <header>
+                <h2>Sub-title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipi sicing elit.</p>
+            </header>
+            <div>
+                <dl>
+                    <dt>1 Cluster</dt>
+                    <dd><i class="fa fa-check-circle status-success"></i>Healthy</dd>
+                </dl>
+                <dl>
+                    <dt>4 Nodes</dt>
+                    <dd><i class="fa fa-check-circle status-success"></i>Healthy</dd>
+                </dl>
+                <dl>
+                    <dt>370 Pods</dt>
+                    <dd><i class="fa fa-exclamation-triangle status-warning"></i><a href="#">2 Warnings</a></dd>
+                </dl>
+                <dl>
+                    <dt>9 Virtual Machines</dt>
+                    <dd><i class="fa fa-exclamation-circle status-error"></i><a href="#">2 Errors</a></dd>
+                </dl>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
