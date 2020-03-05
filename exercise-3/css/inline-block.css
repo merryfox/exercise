@@ -1,0 +1,23 @@
+/* Technique 4 -- inline-block */
+* {
+  box-sizing: border-box;
+}
+main {
+  height: 100px;
+}
+@media screen and (min-width: 640px) {
+    body {
+        white-space: nowrap;
+    }
+    nav, main {
+        display: inline-block;
+        height: 100px;
+    }
+    nav {
+        width: 300px;
+    }
+    main {
+        width: calc(100% - 300px);
+        margin-left: -5px;
+    }
+}

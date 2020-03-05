@@ -1,0 +1,137 @@
+body {
+    background-color: #f1f0f0;
+    color: #444;
+    font-family: overpass;
+    font-size: 16px;
+    font-weight: regular;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #004080;
+}
+
+h1, h2 {
+    margin: 0;
+    font-weight: 600;
+}
+
+p {
+    margin: 6px 0;
+}
+
+.card {
+    background-color: #FFF;
+    padding: 24px;
+    width: 360px;
+}
+
+.card__title {
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.card__title-text {
+    float: left;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.card__title-link {
+    float: right;
+    margin: 12px 0 12px 12px;
+}
+
+.card__subtitle-text {
+    font-size: 18px;
+}
+
+.card__subtitle-description {
+    margin: 6px 0;
+}
+
+.list-item {
+    margin: 0;
+    overflow: hidden;
+    padding: 12px 0;
+}
+
+.list-item__label {
+    float: left;
+    font-weight: 600;
+}
+
+.list-item__content {
+    float: right;
+    margin: 0;
+}
+
+.list-item__content-icon {
+    font-size: 16px;
+    margin: 0 6px;
+}
+
+.icon__status--success {
+    color: #3f8743;
+}
+
+.icon__status--warning {
+    color: #eeac34;
+}
+
+.icon__status--error {
+    color: #c7232d;
+}
+
+@media screen and (max-width: 640px) {
+    .card {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .card__header {
+        margin-bottom: 12px;
+    }
+
+    .card__title {
+        margin-bottom: 6px;
+    }
+
+    .card__title-text {
+        font-size: 18px;           
+    }
+
+    .card__subtitle-text {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .list-item {
+        padding: 0;
+    }
+
+    .list-item__label {
+        float: none;
+        margin: 0 0 12px 0;
+    }
+
+    .list-item__content {
+        float: none;
+        margin: 0 0 12px 0;
+        padding: 0;
+    }
+    
+    .list-item__content-icon {
+        margin-left: 0;
+    }
+}

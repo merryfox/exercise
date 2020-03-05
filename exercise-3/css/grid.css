@@ -1,0 +1,18 @@
+/* Technique 3 -- grid */
+* {
+  box-sizing: border-box;
+}
+main {
+  height: 100px;
+}
+@media screen and (min-width: 640px) {
+  body {
+    display: grid;
+    grid-template-rows: auto 100px auto;
+    grid-template-columns: 300px auto;
+  }
+  header,footer {
+    grid-column-start: 1;
+    grid-column-end: 3; 
+  }
+}
